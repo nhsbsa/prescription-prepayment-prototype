@@ -1,0 +1,59 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Prepay for NHS prescriptions
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="text">
+      
+        <div class="heading-group">
+          <p>Prepay for NHS prescriptions</p>
+          <h1 class="heading-xlarge">Prepayment details</h1>
+        </div>
+
+        <div class="info-table">
+          <p>Prepayment for: <span class="strong">{{name}}</span></p>
+          <p>Date of birth: <span class="strong">01 August 1980</span></p>
+          <p>Prepayment number: <span class="strong">869 467 589</span></p>
+          <p>Started on: <span class="strong">05 April 2017</span></p>
+          <p>Ends on: <span class="strong">04 July 2017</span></p>
+        </div>
+        
+        <p>We will email you in June to remind you.</p>
+        
+        <!--<p><a class="button">Renew now</a></p>-->
+        <hr>
+        
+        <ul class="options-list">
+          <li><a class="icon print-icon" href="javascript:window.print();">Print this</a></li>
+          <li><a class="icon download-icon" href="../public/images/bsa/cert.pdf" target="_blank">Download this (PDF 55k)</a></li>
+        </ul>
+        
+        <hr>
+        
+        <h2 class="heading-medium">Tell us something has changed</h2>
+        
+        <p>
+          You need to tell us if your name or address changes so that you don't get a fine. You can also change the way we contact you.
+        </p>
+        
+        <p>
+          <a href="">Change your details</a>
+        </p>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</main>
+
+{% endblock %}

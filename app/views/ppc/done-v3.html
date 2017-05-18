@@ -1,0 +1,99 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Prepay for NHS prescriptions
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    
+  <div class="grid-row">
+    <!--div class="column-two-thirds">
+
+    <div class="details">
+      <h2 class="heading-medium">Pre-paymentetails</h2>
+      <p class="valid">Valid dates</p>
+      <h2 class="heading-medium bignumbers"><span>from:</span> 20 June 2016</h2>
+      <h2 class="heading-medium bignumbers"><span>to:</span> 21 June 2017</h2> 
+    </div>
+    </div-->
+    
+    <div class="column-two-thirds">
+      
+      <div class="done-panel">
+        
+        <h1 class="heading-large"><span id="done-tick"> </span>Done</h1>
+        <h2 class="heading-medium">You have prepaid for {{duration}} of prescriptions.</h2>
+        
+      </div>
+      
+      <h3 class="heading-medium">Your prepayment details</h3>
+      
+      <p>
+        {{contacttext}}
+      </p>   
+
+      <div class="info-table">
+        <p>Prepayment for: <span class="strong">{{name}}</span></p>
+        <p>Prepayment number: <span class="strong">869 467 589</span></p>
+        <p>Started on: <span class="strong">{{startdate}}</span></p>
+        <p>Ends on: <span class="strong">{{enddate}}</span></p>
+      </div>
+      
+      <div id="dd_content">
+       
+        <h3 class="heading-medium">Your Direct Debit</h3>
+        <p>
+          We have set up a Direct Debit payment for you. You will receive {{method}} confirming this and including your mandate. Our name on your bank statement will be NHSBSA.
+        </p>
+      
+      </div>
+      
+      <h3 class="heading-medium">Collecting prescriptions</h3>
+      
+      <p>
+        Tick box 'F' on the back of your prescription.
+      </p>
+
+      <p>
+        Pharmacy staff ask for prepayment details. If you do not have them with you, they tick 'Evidence not seen' on the prescription. They will not charge you.
+      </p>
+      
+      <p>
+        We prevent fraud by matching prepayment details on our database with prescriptions.
+      </p>
+      
+      <h2 class="heading-medium">For your records</h2>
+   
+      <ul class="list options-list">
+        <li><a class="icon print-icon" href="javascript:window.print();">Print this page</a></li>
+        <li><a class="icon download-icon" href="../public/images/bsa/cert.pdf" target="_blank">Download this page (PDF 55k)</a></li>
+      </ul>
+      <p class="strong">We do not send plastic cards any more.</p>
+      <h2 class="heading-medium">Reminder</h2>
+      <p>We will contact you again in June to remind you when your prepayment will end.</p>
+<!--
+
+      <h3 class="heading-small">
+        We no longer provide plastic cards
+      </h3>
+      
+      <p>
+        We have stopped sending out plastic cards. They are costly to the NHS, bad for the environment and are not required as proof.
+      </p>
+-->
+      
+    </div>
+    
+  </div>
+  
+  <p>
+    <a class="button" href="feedback">Finished</a>
+  </p>
+  
+  <p id="has_dd"class="visually-hidden">{{dd}}</p>
+  
+</main>
+
+{% endblock %}
